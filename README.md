@@ -1,7 +1,7 @@
 <a name="FRGEm"></a>
 ## Github
 
-github地址：
+github地址：https://github.com/kyrieCCC
 <a name="X6gnl"></a>
 ## Timeline
 
@@ -42,7 +42,7 @@ github地址：
 | 33 | tapable hooks&自定义plugin | <br /> | <br /> |
 | 34 | h5调试，前端监控和埋点 | <br /> | <br /> |
 | 35 | 多端应用形态和解决方案概览 | <br /> | <br /> |
-| 36 | 微信小程序开发环境配置 | <br /> | <br /> |
+| 36 | 微信小程序开发环境配置 | <br /> | <br /> |`
 | 37 | 小程序基础能力&硬件能力 | <br /> | <br /> |
 | 38 | pwa | <br /> | <br /> |
 | 39 | react native | <br /> | <br /> |
