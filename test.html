@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Webpage</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <style>
+      img {
+        width: 400px;
+      }
+      div {
+        margin: 10px;
+      }
+      .first_div {
+        background-color: aqua;
+      }
+      span {
+        margin: 10px;
+        background-color: salmon;
+      }
+      .video_style {
+        width: 400px;
+      }
+      .div2 {
+        display: flex;
+        /* border: 1px solid black; */
+        width: 1000px;
+      }
+    </style>
+    <script>
+      function test() {
+        const msg = "你真帅！！！";
+        alert(msg);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="first_div">这是我的div</div>
+    <span>这是span</span>
+    <span>这是span</span>
+    <span>这是span</span>
+    <div style="display: flex;">
+      <div>
+        <video
+          class="video_style"
+          preload="auto"
+          loop
+          playsinline
+          autoplay
+          src="https://lf3-cdn-tos.bytescm.com/obj/ttfe/ATSX/mainland/gongquhunjian_1080.min.mp4"
+          tabindex="-1"
+        ></video>
+      </div>
+      <div>`
+        <img
+          src="https://lf1-cdn-tos.bytescm.com/obj/static/ies/bytedance_official/_next/static/images/0-390b5def140dc370854c98b8e82ad394.png"
+        />
+      </div>
+    </div>
+    <div>
+      <button type="button" class="btn btn-success" onclick="test()">
+        点我
+      </button>
+      <input type="button" value="click me" onclick="test()" />
+    </div>
+    <div class="div2">
+      <div style="border: 1px solid black; width: 300px">
+        多选
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="flexCheckDefault"
+            checked
+          />
+          <label class="form-check-label" for="flexCheckDefault">
+            这是bootstrap的模板多选框
+          </label>
+        </div>
+        <div>
+          <input type="checkbox" id="flexCheckChecked" />
+          <label for="flexCheckChecked"> 这是我写的多选框 </label>
+        </div>
+      </div>
+      <div style="border: 1px solid black; width: 300px">
+        <div>
+          这是输入框
+          <input />
+          <input type="file" />
+        </div>
+      </div>
+      <div style="border: 1px solid black; width: 300px">
+        <div>
+          这是密码
+          <input type="password" />
+          <textarea>这是文本区域</textarea>
+        </div>
+      </div>
+    </div>
+    <div class="div2">
+      <div style="border: 1px solid rebeccapurple; width: 300px">
+        你是GG还是MM?（单选）
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="flexRadioDefault"
+            id="flexRadioDefault1"
+          />
+          <label class="form-check-label" for="flexRadioDefault1"> GG </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="flexRadioDefault"
+            id="flexRadioDefault2"
+            checked
+          />
+          <label class="form-check-label" for="flexRadioDefault2"> MM </label>
+        </div>
+      </div>
+      <div style="border: 1px solid rebeccapurple; width: 300px">
+        <div>
+          这是下拉栏
+          <select>
+            <option>student</option>
+            <option>teacher</option>
+            <option>frontend-engneer</option>
+          </select>
+        </div>
+      </div>
+      <div style="border: 1px solid rebeccapurple; width: 300px">
+        <select class="form-select" aria-label="Default select example">
+          <option>student</option>
+          <option>teacher</option>
+          <option>frontend-engneer</option>
+        </select>
+      </div>
+    </div>
+  </body>
+</html>
