@@ -7,7 +7,7 @@ github地址：https://github.com/kyrieCCC
 
 | **序号** | **课程主题** | **代码仓库链接** | **备注** |
 | --- | --- | --- | --- |
-| 1 | HTML5标签 | <br /> | <br /> |
+| 1 | HTML5标签 | https://github.com/kyrieCCC/start-learn<br /> | <br /> |
 | 2 | CSS格式化和布局 | <br /> | <br /> |
 | 3 | CSS预处理器 | <br /> | <br /> |
 | 4 | JavaScript基础 | <br /> | <br /> |
