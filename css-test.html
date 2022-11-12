@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>学习css</title>
+    <style>
+      div {
+        margin: 10px;
+        font-weight: bold;
+        font-size: 2em;
+      }
+      span {
+        background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+        font-size: 2em;
+        margin: 10px;
+      }
+      .div-style1 {
+        color: #647eff;
+      }
+      .div-style1:hover{
+        cursor: pointer;
+      }
+      #div-style2 {
+        color: greenyellow;
+      }
+      .div-style3 {
+        color: rgba(0, 180, 255, 0.6);
+      }
+      .div-style4{
+        font-family: var(--vt-font-family-base)
+      }
+    </style>
+  </head>
+  <body>
+    <span> 这是使用标签选择器 </span>
+    <div class="div-style1">这是使用类选择器你可以hover我</div>
+    <div id="div-style2">这是使用id选择器</div>
+    <div class="div-style3">测试rgba配色</div>
+    <div class="div-style4">测试字体样式</div>
+  </body>
+</html>
