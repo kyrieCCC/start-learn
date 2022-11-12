@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css">
     <title>学习css</title>
     <style>
       div {
@@ -23,7 +24,7 @@
       .div-style1 {
         color: #647eff;
       }
-      .div-style1:hover{
+      .div-style1:hover {
         cursor: pointer;
       }
       #div-style2 {
@@ -32,16 +33,23 @@
       .div-style3 {
         color: rgba(0, 180, 255, 0.6);
       }
-      .div-style4{
-        font-family: var(--vt-font-family-base)
+      .div-style4 {
+        font-family: var(--vt-font-family-base);
+      }
+      img {
+        width: 200px;
       }
     </style>
   </head>
   <body>
-    <span> 这是使用标签选择器 </span>
-    <div class="div-style1">这是使用类选择器你可以hover我</div>
-    <div id="div-style2">这是使用id选择器</div>
-    <div class="div-style3">测试rgba配色</div>
-    <div class="div-style4">测试字体样式</div>
+        <span> 这是使用标签选择器 </span>
+        <div class="div-style1">这是使用类选择器你可以hover我</div>
+        <div id="div-style2">这是使用id选择器</div>
+        <div class="div-style3">测试rgba配色</div>
+        <div class="div-style4">测试字体样式</div>
+        <div class="div-outstyle">这是外部引入的样式</div>
+      <img
+        src="https://mmbiz.qpic.cn/mmbiz_jpg/W36vZNmGzfF1fv8MuUvEYbnItJUaO1J5ctGYv359VhVicsTnB6hg0nJbdF6UoeORXTOmhBnGHw4wlcWn4ZagTKA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1"
+      />
   </body>
 </html>
