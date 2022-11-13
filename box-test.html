@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>练习盒子模型</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .content {
+        position: sticky;
+        display: flex;
+        padding: 0 60px;
+        height: 60px;
+        color: #f4f5f5;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      }
+      .div-ele {
+        width: 28px;
+        margin: 0 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        color: #515767;
+      }
+      .div-ele:hover {
+        cursor: pointer;
+        color: #363941;
+        border-bottom: 1px solid #1e80ff;
+      }
+      .img-ele {
+        display: block;
+        width: 107px;
+        height: 22px;
+      }
+      .img-ele-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+      }
+      .null-div {
+        width: 200px;
+      }
+      .img-ele2 {
+        width: 115px;
+        height: 34px;
+      }
+      .seacher {
+        width: 262px;
+        height: 60px;
+        margin-top: 12px;
+      }
+      .create-min {
+        width: 132px;
+        height: 60px;
+        margin-top: 12px;
+        margin-left: 15px;
+      }
+      .img-ele3 {
+        width: 24px;
+        height: 24px;
+        margin-right: 6px;
+      }
+      .img3-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .munber {
+        color: #86909c;
+        font-size: 14px;
+      }
+    </style>
+    <style>
+      .contentbox {
+        box-sizing: content-box;
+        border: 2px solid aqua;
+        width: 500px;
+        height: 100px;
+        padding: 10px;
+        margin: 10px;
+      }
+      .IEbox {
+        box-sizing: border-box;
+        width: 500px;
+        height: 100px;
+        border: 2px solid yellowgreen;
+        padding: 10px;
+        margin: 10px;
+      }
+      .bodycontent {
+        width: 550px;
+        display: flex;
+      }
+      .img-ele4 {
+        width: 200px;
+        height: 200px;
+      }
+      .farther {
+        position: relative;
+      }
+      .imgcontent {
+        margin: 50px 250px;
+      }
+      .imgcontent-p1 {
+        position: absolute;
+        top: 70px;
+        left: 350px;
+      }
+      .imgcontent-p2 {
+        position: absolute;
+        top: 100px;
+        left: 450px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="img-ele-div">
+        <img
+          src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/e08da34488b114bd4c665ba2fa520a31.svg"
+          class="img-ele"
+        />
+      </div>
+      <div class="div-ele">首页</div>
+      <div class="div-ele">沸点</div>
+      <div class="div-ele">课程</div>
+      <div class="div-ele">直播</div>
+      <div class="div-ele">活动</div>
+      <div class="div-ele">商城</div>
+      <div class="div-ele">APP</div>
+      <div class="div-ele">插件</div>
+      <div class="img-ele-div">
+        <img
+          src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/759e2aa805c0461b840e0f0f09ed05fa~tplv-k3u1fbpfcp-zoom-1.image?"
+          class="img-ele2"
+        />
+      </div>
+      <div class="null-div"></div>
+      <div class="seacher">
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="搜索..."
+            aria-label="Username"
+          />
+        </div>
+      </div>
+      <div class="create-min">
+        <button type="button" class="btn btn-primary">创作者中心</button>
+      </div>
+      <div class="img3-div">
+        <img
+          src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/24127194d5b158d7eaf8f09a256c5d01.svg"
+          class="img-ele3"
+        />
+        <div class="munber">会员</div>
+      </div>
+    </div>
+    <div class="bodycontent">
+      <div>
+        <div class="contentbox">
+          <div>标准盒模型</div>
+          <div>content的大小可以由宽高来决定</div>
+        </div>
+        <div class="IEbox">
+          <div>这是怪异盒模型</div>
+          <div>因为我的border有长度,所以内容给挤压了</div>
+        </div>
+      </div>
+      <div class="farther">
+        <div class="imgcontent">
+          <img
+            src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/32bf8cd1bb46477dac1791549301f87a~tplv-k3u1fbpfcp-no-mark:480:400:0:0.awebp?"
+            class="img-ele4"
+          />
+        </div>
+        <div class="imgcontent-p1">
+          <img
+            src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/32bf8cd1bb46477dac1791549301f87a~tplv-k3u1fbpfcp-no-mark:480:400:0:0.awebp?"
+            class="img-ele4"
+          />
+        </div>
+        <div class="imgcontent-p2">
+          <img
+            src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/32bf8cd1bb46477dac1791549301f87a~tplv-k3u1fbpfcp-no-mark:480:400:0:0.awebp?"
+            class="img-ele4"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
