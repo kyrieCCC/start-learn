@@ -1,6 +1,47 @@
+@import './test.scss';
+$mycolor: rgb(143, 212, 244);
+$mycolor2: rgb(226, 147, 228);
 .container {
-    background-color: aqua;
-    font-size: 28px;
-    width: 500px;
-    height: 500px;
+  background-color: $mycolor;
+  font-size: 23px;
+  width: 500px;
+  height: 500px;
+  position: relative;
+
+  div {
+    background-color: $mycolor2;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+  }
+  &:hover {
+    cursor: pointer;
+    background-color: bisque;
+
+    // &~.helloworld {
+    //     background-color: $mycolor
+    // }
+    &~.helloworld2 {
+        background-color: $mycolor
+    }
+  }
+}
+.container:hover + .helloworld {
+    background-color: $mycolor
+}
+.helloworld {
+    @include hello;
+}
+.helloworld2 {
+    @include hello2(30px, $mycolor, bisque);
+}
+.helloworld3 {
+    @extend %back-color;
+}
+%back-color {
+    background-color: coral;    
 }

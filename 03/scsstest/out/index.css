@@ -1,8 +1,46 @@
 .container {
-  background-color: aqua;
-  font-size: 28px;
+  background-color: rgb(143, 212, 244);
+  font-size: 23px;
   width: 500px;
   height: 500px;
+  position: relative;
+}
+.container div {
+  background-color: rgb(226, 147, 228);
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+}
+.container:hover {
+  cursor: pointer;
+  background-color: bisque;
+}
+.container:hover ~ .helloworld2 {
+  background-color: rgb(143, 212, 244);
+}
+
+.container:hover + .helloworld {
+  background-color: rgb(143, 212, 244);
+}
+
+.helloworld {
+  font-size: 18px;
+  color: yellowgreen;
+  background-color: bisque;
+}
+
+.helloworld2 {
+  font-size: 30px;
+  color: rgb(143, 212, 244);
+  background-color: bisque;
+}
+
+.helloworld3 {
+  background-color: coral;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="ul-list">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+    <div id="outSide">
+        这是最外层
+        <div id="second">
+            这是第二层
+            <div id="inSide">
+                这是最内层
+            </div>
+        </div>
+    </div>
+    <script>
+        var a = document.getElementById('ul-list')
+        a.addEventListener('click', (item) => console.log('冒泡', item.target.innerHTML))
+        var fristDiv = document.getElementById('outSide')
+        var secondDiv = document.getElementById('second')
+        var innerDiv = document.getElementById('inSide')
+
+        fristDiv.addEventListener('click', () => console.log('冒泡 这是最外层'), true)
+        secondDiv.addEventListener('click', () => console.log('冒泡 这是第二层'), true)
+        innerDiv.addEventListener('click', () => console.log('冒泡 这是最内层'), true)
+    </script>
+</body>
+</html>

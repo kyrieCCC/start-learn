@@ -1,0 +1,10 @@
+@mixin hello {
+    font-size: 18px;
+    color: yellowgreen;
+    background-color: bisque;
+}
+    @mixin hello2($size:21px, $color:green, $backColor:yellow) {
+        font-size: $size;
+        color: $color;
+        background-color: $backColor;
+    }
