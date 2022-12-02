@@ -29,8 +29,8 @@
         var secondDiv = document.getElementById('second')
         var innerDiv = document.getElementById('inSide')
 
-        fristDiv.addEventListener('click', () => console.log('冒泡 这是最外层'), true)
-        secondDiv.addEventListener('click', () => console.log('冒泡 这是第二层'), true)
+        fristDiv.addEventListener('click', (event) => console.log('冒泡 这是最外层,这是', event.type, '方法'), true)
+        secondDiv.addEventListener('click', (event) => console.log('冒泡 这是第二层', event.detail), true)
         innerDiv.addEventListener('click', () => console.log('冒泡 这是最内层'), true)
     </script>
 </body>
