@@ -15,10 +15,11 @@
       img {
         width: 400px;
       }
-      div {
+      /* div {
         margin: 10px;
-      }
+      } */
       .first_div {
+        margin: 10px;
         background-color: aqua;
       }
       span {
@@ -33,6 +34,25 @@
         /* border: 1px solid black; */
         width: 1000px;
       }
+      .father {
+        margin: 20px;
+        width: 300px;
+        border: 1px solid red;
+      }
+      .relation-father {
+        position: relative;
+        margin-top: 100px;
+        width: 200px;
+        height: 200px;
+        border:  1px solid red;
+      }
+      .relation-test {
+        position: absolute;
+        width: 150px;
+        /* top: 20px; */
+        left: 20px;
+        background-color: yellowgreen;
+      }
     </style>
     <script>
       function test() {
@@ -42,10 +62,17 @@
     </script>
   </head>
   <body>
-    <div class="first_div">这是我的div</div>
-    <span>这是span</span>
-    <span>这是span</span>
-    <span>这是span</span>
+    <div class="father">
+      <div class="first_div">这是我的div</div>
+      <div class="first_div">这是我的div</div>
+      <div class="first_div">这是我的div</div>
+    </div>
+    <p></p>
+    <div class="father">
+      <span>这是span</span>
+      <span>这是span</span>
+      <span>这是span</span>
+    </div>
     <div style="display: flex;">
       <div>
         <video
@@ -143,6 +170,11 @@
           <option>teacher</option>
           <option>frontend-engneer</option>
         </select>
+      </div>
+    </div>
+    <div class="relation-father">
+      <div class="relation-test">
+        hello world!
       </div>
     </div>
   </body>
